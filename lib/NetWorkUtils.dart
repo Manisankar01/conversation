@@ -16,7 +16,7 @@ class NetWorkUtils extends StatefulWidget {
   State<NetWorkUtils> createState() => _NetWorkUtilsState();
 }
 
-class _NetWorkUtilsState extends State<NetWorkUtils>with  WidgetsBindingObserver {
+class _NetWorkUtilsState extends State<NetWorkUtils>  with  WidgetsBindingObserver {
   final Connectivity _connectivity = Connectivity();
   late StreamSubscription<ConnectivityResult> _connectivitySubscription;
 

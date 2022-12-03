@@ -84,6 +84,7 @@ class _PersonDetails extends State<PersonDetails> with WidgetsBindingObserver {
     vCard.middleName = 'MiddleName';
     vCard.lastName = 'LastName';
     vCard.organization = 'ActivSpaces Labs';
+
     vCard.photo.attachFromUrl('/path/to/image/file.png', 'PNG');
     vCard.workPhone = 'Work Phone Number';
     vCard.birthday = DateTime.now();
