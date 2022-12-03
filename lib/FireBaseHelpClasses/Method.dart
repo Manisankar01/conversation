@@ -79,7 +79,7 @@ Future logOut(BuildContext context) async {
   FirebaseAuth auth = FirebaseAuth.instance;
   try {
     await auth.signOut().then((value) => Navigator.pushReplacement(context,
-        MaterialPageRoute(builder: (context) => const SignInScreen())));
+        MaterialPageRoute(builder: (context) => const SignInScreen()),));
     UserDetailsStream.removeUserData();
     if(kDebugMode){
       print('Logout Successfully');
